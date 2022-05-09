@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>planium</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" target="_self">
+        <div>
+          <select name="registro" id="plans">
+            <option value="1" class="plan" placeholder="plano">
+              Bitix Customer Plano 1
+            </option>
+            <option value="2" class="plan" placeholder="plano">
+              Bitix Customer Plano 2
+            </option>
+            <option value="3" class="plan" placeholder="plano">
+              Bitix Customer Plano 3
+            </option>
+            <option value="4" class="plan" placeholder="plano">
+              Bitix Customer Plano 4
+            </option>
+            <option value="5" class="plan" placeholder="plano">
+              Bitix Customer Plano 5
+            </option>
+            <option value="6" class="plan" placeholder="plano">
+              Bitix Customer Plano 6
+            </option>
+          </select>
+          <br />
+        </div>
+      </form>
+      <input class="quant_membros" type="text" placeholder="quantidade de membros"/><br>
+      <button onclick="addUsers()">Adicionar Membros</button>
+      <div class="membros"></div>
+      <button type="button" onclick="criarGrupo()">Enviar</button>
+      <div class="cadastroInfo"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
